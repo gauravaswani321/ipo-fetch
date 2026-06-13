@@ -2,7 +2,7 @@ name: IPO Bot Scheduler
 
 on:
   schedule:
-    - cron: "40 17 * * *"
+    - cron: "*/2 * * * *"
   workflow_dispatch:
 
 jobs:
