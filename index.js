@@ -25,21 +25,6 @@ async function run() {
         ])
     );
 
-    /* const result = ipoList
-        .filter(ipo => gmpMap.has(ipo.company_short_name.toLowerCase()))
-        .map(ipo => {
-            const gmp = gmpMap.get(ipo.company_short_name.toLowerCase());
-            return {
-                companyName: ipo.company_short_name,
-                gmpPrice: gmp.gmp,
-                gmpPercentage: gmp.gmp_perc,
-                issueOpenDate: formatDate(ipo.issue_open_dt),
-                issueEndDate: formatDate(ipo.issue_end_dt),
-                ipoCategory: ipo.ipo_category,
-                companySector: ipo.company_sector
-            };
-        }); */
-
     const result = ipoList
     .filter(ipo => {
         const gmp = gmpMap.get(ipo.company_short_name.toLowerCase());
