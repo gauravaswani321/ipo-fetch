@@ -14,13 +14,3 @@ export async function sendTelegramMessage(text) {
         }
     );
 }
-
-
-/* async function getUpdates() {
-    const res = await axios.get(
-        `https://api.telegram.org/bot${BOT_TOKEN}/getUpdates`
-    );
-    console.log(JSON.stringify(res.data, null, 2));
-}
-
-getUpdates(); */
