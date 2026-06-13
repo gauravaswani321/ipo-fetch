@@ -62,8 +62,8 @@ async function run() {
     const message = result.map(item => {
     return [
         `📊 ${item.companyName}`,
-        `💰 GMP: ${item.gmpPrice} (${item.gmpPercentage}%)`,
         `📂 Category: ${item.ipoCategory}`,
+        `💰 GMP: ${item.gmpPrice} (${item.gmpPercentage}%)`,
         `🟢 Open: ${item.issueOpenDate}`,
         `🔴 Close: ${item.issueEndDate}`,
         `🏭 Sector: ${item.companySector}`
